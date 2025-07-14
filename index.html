@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- <link href="src/output.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="src/style.css">
@@ -12,76 +12,421 @@
   <title>Netflix Nepal - Watch TV Shows Online, Watch Movies Online</title>
 </head>
 
-<body >
+<body>
   <div class="header">
-    <div class="px-3 sm:px-8 md:px-12 xl:mx-[300px]">
+    <div class="px-3 sm:px-8 md:px-12 xl:mx-[250px]">
       <nav class="flex items-center justify-between">
         <div class="">
-          <img src="public/logo.png" alt="" class="hover:cursor-pointer w-[130px] md:w-[155px]">
+          <img src="public/logo.png" alt="" class="hover:cursor-pointer w-[130px] md:w-[175px]">
         </div>
         <div class="">
-          <button class="text-white bg-red-600 px-4 py-1 rounded-sm w-76px font-sans font-semibold md:text-xl">Sign
-            In</button>
+          <button
+            class="text-white bg-red-600 px-4 py-2 hover:cursor-pointer rounded-sm font-sans font-semibold md:text-xl xl:text-sm">
+            Sign
+            In
+          </button>
         </div>
       </nav>
     </div>
-    <div class="px-3 absolute top-12 sm:px-8 md:px-12 flex flex-col h-[70vh] justify-center lg:flex lg:flex-col lg:h-[70vh] lg:justify-center xl:items-center xl:justify-center w-full">
-      <div class="mb-3 text-center px-2">
-        <h1 class="text-white font-bold  text-4xl sm:text-6xl">Unlimited movies, TV shows, and more</h1>
-      </div>
-      <div class="mb-3 px-2">
-        <p class="text-white text-center font-md text-md sm:text-xl">Starts at USD 2.99. Cancel anytime.
-        </p>
-      </div>
-      <div class="mb-3 px-2">
-        <p class="text-white text-center font-md text-md sm:text-xl">Ready to watch? Enter your email
-          to
-          create or restart your membership.</p>
-      </div>
-      <div class="flex flex-col items-center gap-5 lg:flex lg:justify-center lg:gap-5 lg:items-center md:flex md:justify-center md:items-center lg:flex-row">
-        <div class="">
-          <input type="email" placeholder="Email address"
-            class="w-auto px-4 py-3 sm:px-6 sm:py-4 sm:text-xl sm:rounded-md font-semibold border-1 rounded-sm border-gray-500 text-white">
+    <div
+      class="px-3 absolute top-12 sm:px-8 md:px-12 flex flex-col h-[70vh] xl:h-[100vh] justify-center lg:flex lg:flex-col lg:h-[70vh] lg:justify-center xl:items-center xl:justify-center w-full">
+      <div class="xl:w-[670px]">
+        <div class="mb-6 text-center px-2">
+          <h1 class="text-white font-bold  text-4xl sm:text-7xl">Unlimited movies, TV shows, and more</h1>
         </div>
-        <div class="">
-          <button class="px-4 py-3 text-white font-sans font-bold text-xl rounded-sm bg-red-600">Get
-            Started &nbsp; <i class="fa-solid fa-greater-than"></i></button>
+        <div class="mb-6 px-2">
+          <p class="text-white text-center font-md text-md sm:text-2xl xl:font-semibold">
+            Starts at USD 2.99. Cancel
+            anytime.
+          </p>
+        </div>
+        <div class="mb-6 px-2">
+          <p class="text-white text-center font-md text-md sm:text-xl xl:text-[15px]">
+            Ready to watch? Enter your email
+            to
+            create or restart your membership.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center gap-5 lg:flex lg:justify-center lg:gap-5 lg:items-center md:flex md:justify-center md:items-center lg:flex-row xl:flex xl:gap-3">
+          <div class="">
+            <input type="email" placeholder="Email address"
+              class="w-[443px] px-4 py-3 sm:px-6 sm:py-4 sm:text-xl sm:rounded-md font-semibold border-1 rounded-sm border-gray-500 text-white">
+          </div>
+          <div class="">
+            <button
+              class="px-4 py-4 text-white font-sans font-bold hover:cursor-pointer text-xl rounded-sm bg-red-600 xl:w[213px]">
+              Get
+              Started &nbsp;
+              <i class="fa-solid fa-greater-than"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- Trending section -->
   <section>
-    <div class="xl:px-[300px]">
+    <div class="px-3 sm:px-8 md:px-12 xl:mx-[250px] xl:py-12">
       <!-- Trending heading -->
       <div class="px-0 py-5">
-        <h4 class="text-white font-bold text-5xl">Trending Now</h4>
+        <h4 class="text-white font-bold text-4xl">Trending Now</h4>
       </div>
       <!-- Card div -->
-      <div class="flex w-[1320px] justify-between">
-        <div class="relative">
-          <img src="public/squid-game.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
-          <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">1</p>
+      <div class="">
+        <div class="xl:flex xl:justify-center xl:gap-14">
+          <div class="xl:flex xl:gap-16" id="slider1">
+            <div
+              class="xl:relative xl:hover:transform xl:hover:scale-106 xl:transition xl:duration-400 xl:hover:ease-in-out"
+              id="squid">
+              <img src="public/squid-game.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+              <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">1</p>
+            </div>
+            <div
+              class="xl:relative xl:hover:transform xl:hover:scale-106 xl:transition xl:duration-400 xl:hover:ease-in-out"
+              id="kapil">
+              <img src="public/kapil.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+              <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">2</p>
+            </div>
+            <div
+              class="xl:relative xl:hover:transform xl:hover:scale-106 xl:transition xl:duration-400 xl:hover:ease-in-out"
+              id="flower">
+              <img src="public/flower.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+              <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">3</p>
+            </div>
+            <div
+              class="xl:relative xl:hover:transform xl:hover:scale-106 xl:transition xl:duration-400 xl:hover:ease-in-out"
+              id="raid">
+              <img src="public/raid.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+              <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">4</p>
+            </div>
+            <div
+              class="xl:relative xl:hover:transform xl:hover:scale-106 xl:transition xl:duration-400 xl:hover:ease-in-out"
+              id="aap">
+              <img src="public/aap.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+              <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">5</p>
+            </div>
+          </div>
+          <div class="xl:flex xl:justify-between xl:items-center" id="button1">
+            <div
+              class="xl:h-[90px] xl:bg-[#272727] xl:flex xl:items-center xl:px-1.5 xl:rounded-xl hover:bg-[#3b3b3b] hover:cursor-pointer"
+              id="slider-button-1">
+              <i class="fa-solid fa-arrow-right xl:text-white"></i>
+            </div>
+          </div>
         </div>
-        <div class="relative">
-          <img src="public/kapil.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
-          <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">2</p>
+        <div class="xl:flex xl:justify-center xl:gap-14">
+          <div class="xl:gap-16 xl:hidden" id="slider2">
+            <div class="xl:flex xl:justify-between xl:items-center" id="button2">
+              <div
+                class="xl:h-[90px] xl:bg-[#272727] xl:flex xl:items-center xl:px-1.5 xl:rounded-xl hover:bg-[#3b3b3b] hover:cursor-pointer"
+                id="slider-button-2">
+                <i class="fa-solid fa-arrow-left xl:text-white"></i>
+              </div>
+            </div>
+            <div
+              class="xl:relative xl:hover:transform xl:hover:scale-106 xl:transition xl:duration-400 xl:hover:ease-in-out"
+              id="ziam">
+              <img src="public/ziam.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+              <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">6</p>
+            </div>
+            <div
+              class="xl:relative xl:hover:transform xl:hover:scale-106 xl:transition xl:duration-400 xl:hover:ease-in-out"
+              id="hit">
+              <img src="public/hit.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+              <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">7</p>
+            </div>
+            <div
+              class="xl:relative xl:hover:transform xl:hover:scale-106 xl:transition xl:duration-400 xl:hover:ease-in-out"
+              id="old">
+              <img src="public/old.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+              <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">8</p>
+            </div>
+            <div
+              class="xl:relative xl:hover:transform xl:hover:scale-106 xl:transition xl:duration-400 xl:hover:ease-in-out"
+              id="sand">
+              <img src="public/sand.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+              <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">9</p>
+            </div>
+            <div
+              class="xl:relative xl:hover:transform xl:hover:scale-106 xl:transition xl:duration-400 xl:hover:ease-in-out"
+              id="jaat">
+              <img src="public/jaat.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+              <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">10</p>
+            </div>
+          </div>
         </div>
-        <div class="relative">
-          <img src="public/flower.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
-          <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">3</p>
+      </div>
+      <!-- Reasons div -->
+      <div class="px-0 py-5">
+        <!-- More Reasons -->
+        <div class="px-0 py-5">
+          <h4 class="text-white font-bold text-4xl">More Reasons To Join</h4>
         </div>
-        <div class="relative">
-          <img src="public/raid.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
-          <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">4</p>
-        </div>
-        <div class="relative">
-          <img src="public/aap.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
-          <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">5</p>
+        <!-- Card section -->
+        <div class="xl:flex xl:justify-between">
+          <div
+            class="xl:relative xl:rounded-xl xl:p-[25px] xl:text-white xl:w-[288px] xl:h-[324px] xl:bg-gradient-to-br xl:from-[#0f0c29] xl:via-[#302b63] xl:to-[#3e2424]">
+            <h5 class="text-2xl mb-5 font-semibold">Enjoy on your TV</h5>
+            <p class="text-gray-400 font-semibold">
+              Watch on Smart TVs, Playstation, Xbox,Chromecast, Apple TV, Blu-ray
+              players, and more.
+            </p>
+            <i class="fa-solid fa-tv absolute right-[25px] bottom-[25px] text-3xl text-red-400"></i>
+          </div>
+          <div
+            class="xl:relative xl:rounded-xl xl:p-[25px] xl:text-white xl:w-[288px] xl:h-[324px] xl:bg-gradient-to-br xl:from-[#0f0c29] xl:via-[#302b63] xl:to-[#3e2424]">
+            <h5 class="text-2xl mb-5 font-semibold">Download your shows to watch offline</h5>
+            <p class="text-gray-400 font-semibold">Save your favorites easily and always have something to watch.</p>
+            <i
+              class="fa-solid fa-arrow-down absolute right-[25px] bottom-[25px] xl:rounded-full xl:text-4xl xl:px-3 xl:py-2 xl:text-red-400 xl:bg-gradient-to-br xl:from-[#9900b8] xl:via-[#ffffff] xl:to-[#ff5c5c]"></i>
+          </div>
+          <div
+            class="xl:relative xl:rounded-xl xl:p-[25px] xl:text-white xl:w-[288px] xl:h-[324px] xl:bg-gradient-to-br xl:from-[#0f0c29] xl:via-[#302b63] xl:to-[#3e2424]">
+            <h5 class="text-2xl mb-5 font-semibold">Watch everywhere</h5>
+            <p class="text-gray-400 font-semibold">
+              Stream unlimited movies and TV shows on your phone, tablet, laptop,
+              and TV.
+            </p>
+            <i
+              class="fa-solid fa-binoculars absolute right-[25px] bottom-[15px] xl:rounded-full xl:text-4xl xl:px-3 xl:py-3 xl:text-red-400"></i>
+          </div>
+          <div
+            class="xl:relative xl:rounded-xl xl:p-[25px] xl:text-white xl:w-[288px] xl:h-[324px] xl:bg-gradient-to-br xl:from-[#0f0c29] xl:via-[#302b63] xl:to-[#3e2424]">
+            <h5 class="text-2xl mb-5 font-semibold">Create profiles for kids</h5>
+            <p class="text-gray-400 font-semibold">
+              Send kids on adventures with their favorite characters in a space
+              made just for them — free with your membership.
+            </p>
+            <i
+              class="fa-regular fa-face-smile absolute right-[25px] bottom-[15px] xl:rounded-full xl:text-4xl xl:px-3 xl:py-3 xl:text-red-400"></i>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <section>
+    <!-- container -->
+    <div class="px-3 sm:px-8 md:px-12 xl:mx-[250px] xl:py-12">
+      <div class="px-0 py-5">
+        <h4 class="text-white font-bold text-4xl">Frequently Asked Questions</h4>
+      </div>
+      <!-- Dropdown div -->
+      <div class="xl:flex xl:flex-col xl:space-y-2.5">
+        <!-- dropdown child 1 -->
+        <div class="">
+          <div onclick="toggle1()"
+            class="xl:text-white xl:bg-[#272727] xl:hover:bg-[#3b3b3b] xl:px-5 xl:py-3 xl:flex xl:justify-between xl:items-center hover:cursor-pointer">
+            <h5 class="xl:text-2xl xl:font-semibold">What is Netflix?</h5>
+            <i class="fa-solid fa-plus xl:text-2xl"></i>
+          </div>
+          <p id="c1-p1"
+            class="hidden xl:bg-[#272727] xl:px-5 xl:py-3 xl:mt-0.5 xl:text-white xl:text-2xl xl:font-semibold">
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+            documentaries, and more on thousands of internet-connected devices.
+          </p>
+          <p id="c1-p2" class="hidden xl:bg-[#272727] xl:px-5 xl:py-3 xl:text-white xl:text-2xl xl:font-semibold">
+            You
+            can
+            watch as much as you want, whenever you want without a single commercial – all for one low monthly price.
+            There's always something new to discover and new TV shows and movies are added every week!
+          </p>
+        </div>
+        <!-- dropdown child 2 -->
+        <div class="">
+          <div onclick="toggle2()"
+            class="xl:text-white xl:bg-[#272727] xl:hover:bg-[#3b3b3b] xl:px-5 xl:py-3 xl:flex xl:justify-between xl:items-center hover:cursor-pointer">
+            <h5 class="xl:text-2xl xl:font-semibold">How much does Netflix cost?</h5>
+            <i class="fa-solid fa-plus xl:text-2xl"></i>
+          </div>
+          <p id="c2-p1"
+            class="hidden xl:bg-[#272727] xl:px-5 xl:py-3 xl:mt-0.5 xl:text-white xl:text-2xl xl:font-semibold">
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly
+            fee. Plans range from USD 2.99 to USD 9.99 a month. No extra costs, no contracts.
+          </p>
+        </div>
+        <!-- dropdown child 3 -->
+        <div class="">
+          <div onclick="toggle3()"
+            class="xl:text-white xl:bg-[#272727] xl:hover:bg-[#3b3b3b] xl:px-5 xl:py-3 xl:flex xl:justify-between xl:items-center hover:cursor-pointer">
+            <h5 class="xl:text-2xl xl:font-semibold">Where can I watch?</h5>
+            <i class="fa-solid fa-plus xl:text-2xl"></i>
+          </div>
+          <p id="c3-p1"
+            class="hidden xl:bg-[#272727] xl:px-5 xl:py-3 xl:mt-0.5 xl:text-white xl:text-2xl xl:font-semibold">
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+            documentaries, and more on thousands of internet-connected devices.
+          </p>
+          <p id="c3-p2" class="hidden xl:bg-[#272727] xl:px-5 xl:py-3 xl:text-white xl:text-2xl xl:font-semibold">
+            You
+            can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on
+            the go and without an internet connection. Take Netflix with you anywhere.
+          </p>
+        </div>
+        <!-- dropdown child 4 -->
+        <div class="">
+          <div onclick="toggle4()"
+            class="xl:text-white xl:bg-[#272727] xl:hover:bg-[#3b3b3b] xl:px-5 xl:py-3 xl:flex xl:justify-between xl:items-center hover:cursor-pointer">
+            <h5 class="xl:text-2xl xl:font-semibold">How do I cancel?</h5>
+            <i class="fa-solid fa-plus xl:text-2xl"></i>
+          </div>
+          <p id="c4-p1"
+            class="hidden xl:bg-[#272727] xl:px-5 xl:py-3 xl:mt-0.5 xl:text-white xl:text-2xl xl:font-semibold">
+            Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account
+            online in two clicks. There are no cancellation fees – start or stop your account anytime.
+          </p>
+        </div>
+        <!-- dropdown child 5 -->
+        <div class="">
+          <div onclick="toggle5()"
+            class="xl:text-white xl:bg-[#272727] xl:hover:bg-[#3b3b3b] xl:px-5 xl:py-3 xl:flex xl:justify-between xl:items-center hover:cursor-pointer">
+            <h5 class="xl:text-2xl xl:font-semibold">What can I watch on Netflix?</h5>
+            <i class="fa-solid fa-plus xl:text-2xl"></i>
+          </div>
+          <p id="c5-p1"
+            class="hidden xl:bg-[#272727] xl:px-5 xl:py-3 xl:mt-0.5 xl:text-white xl:text-2xl xl:font-semibold">
+            Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix
+            originals, and more. Watch as much as you want, anytime you want.
+          </p>
+        </div>
+        <!-- dropdown child 6 -->
+        <div class="">
+          <div onclick="toggle6()"
+            class="xl:text-white xl:bg-[#272727] xl:hover:bg-[#3b3b3b] xl:px-5 xl:py-3 xl:flex xl:justify-between xl:items-center hover:cursor-pointer">
+            <h5 class="xl:text-2xl xl:font-semibold">Is Netflix good for kids?</h5>
+            <i class="fa-solid fa-plus xl:text-2xl"></i>
+          </div>
+          <p id="c6-p1"
+            class="hidden xl:bg-[#272727] xl:px-5 xl:py-3 xl:mt-0.5 xl:text-white xl:text-2xl xl:font-semibold">
+            The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+            family-friendly TV shows and movies in their own space.
+          </p>
+          <p id="c6-p2" class="hidden xl:bg-[#272727] xl:px-5 xl:py-3 xl:text-white xl:text-2xl xl:font-semibold">
+            Kids
+            profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids
+            can watch and block specific titles you don’t want kids to see.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="xl:flex xl:flex-col xl:items-center xl:py-12">
+      <div class="xl:py-5">
+        <p class="xl:text-white xl:font-semibold">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center gap-5 lg:flex lg:justify-center lg:gap-2 lg:items-center md:flex md:justify-center md:items-center lg:flex-row">
+        <div class="">
+          <input type="email" placeholder="Email address"
+            class="w-[600px] px-4 py-3 sm:px-6 sm:py-4 sm:text-xl sm:rounded-md font-semibold border-1 rounded-sm border-gray-500 text-white">
+        </div>
+        <div class="">
+          <button class="px-4 py-4 text-white font-sans font-bold hover:cursor-pointer text-xl rounded-sm bg-red-600">
+            Get
+            Started &nbsp;
+            <i class="fa-solid fa-greater-than"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <!-- footer main div -->
+    <div class="px-3 sm:px-8 md:px-12 xl:mx-[250px] xl:flex xl:flex-col xl:gap-12 xl:pb-32">
+      <!-- footer top -->
+      <div class="">
+        <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+          <a href="">Questions? Contact us.</a>
+        </li>
+      </div>
+      <!-- footer mid -->
+      <div class="xl:flex xl:justify-between">
+        <div class="">
+          <ul class="xl:flex xl:flex-col gap-3">
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">FAQ</a>
+            </li>
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Investor Relations</a>
+            </li>
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Privacy</a>
+            </li>
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Speed Test</a>
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <ul class="xl:flex xl:flex-col gap-3">
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Help Center</a>
+            </li>
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Jobs</a>
+            </li>
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Cookie Preferenes</a>
+            </li>
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Legal Notices</a>
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <ul class="xl:flex xl:flex-col gap-3">
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Account</a>
+            </li>
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Ways to Watch</a>
+            </li>
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">
+                Corporate
+                Information
+              </a>
+            </li>
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Only on Netflix</a>
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <ul class="xl:flex xl:flex-col gap-3">
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Media Center</a>
+            </li>
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Terms of Use</a>
+            </li>
+            <li class="xl:text-[#7a7a7a] xl:font-semibold xl:list-none xl:underline">
+              <a href="">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- fotter bottom -->
+      <div class="xl:flex xl:flex-col xl:gap-8">
+        <div class="text-white ">
+          <select name="" id="" class="border-1 border-gray-500 rounded-sm px-2 py-1">
+            <option value="english">English</option>
+          </select>
+        </div>
+        <div class="text-[#7a7a7a]">
+          <p>Netflix Nepal</p>
+        </div>
+        <div class="text-[#7a7a7a]">
+          <p class="xl:inline xl:text-sm">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+          <a href="" class="xl:underline xl:text-blue-500">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="src/script.js"></script>
 </body>
 
 </html>
