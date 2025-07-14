@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- <link href="src/output.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="shortcut icon" href="public/favicon/favicon.ico" type="image/x-icon">
+  <title>Netflix Nepal - Watch TV Shows Online, Watch Movies Online</title>
+</head>
+
+<body >
+  <div class="header">
+    <div class="px-3 sm:px-8 md:px-12 xl:mx-[300px]">
+      <nav class="flex items-center justify-between">
+        <div class="">
+          <img src="public/logo.png" alt="" class="hover:cursor-pointer w-[130px] md:w-[155px]">
+        </div>
+        <div class="">
+          <button class="text-white bg-red-600 px-4 py-1 rounded-sm w-76px font-sans font-semibold md:text-xl">Sign
+            In</button>
+        </div>
+      </nav>
+    </div>
+    <div class="px-3 absolute top-12 sm:px-8 md:px-12 flex flex-col h-[70vh] justify-center lg:flex lg:flex-col lg:h-[70vh] lg:justify-center xl:items-center xl:justify-center w-full">
+      <div class="mb-3 text-center px-2">
+        <h1 class="text-white font-bold  text-4xl sm:text-6xl">Unlimited movies, TV shows, and more</h1>
+      </div>
+      <div class="mb-3 px-2">
+        <p class="text-white text-center font-md text-md sm:text-xl">Starts at USD 2.99. Cancel anytime.
+        </p>
+      </div>
+      <div class="mb-3 px-2">
+        <p class="text-white text-center font-md text-md sm:text-xl">Ready to watch? Enter your email
+          to
+          create or restart your membership.</p>
+      </div>
+      <div class="flex flex-col items-center gap-5 lg:flex lg:justify-center lg:gap-5 lg:items-center md:flex md:justify-center md:items-center lg:flex-row">
+        <div class="">
+          <input type="email" placeholder="Email address"
+            class="w-auto px-4 py-3 sm:px-6 sm:py-4 sm:text-xl sm:rounded-md font-semibold border-1 rounded-sm border-gray-500 text-white">
+        </div>
+        <div class="">
+          <button class="px-4 py-3 text-white font-sans font-bold text-xl rounded-sm bg-red-600">Get
+            Started &nbsp; <i class="fa-solid fa-greater-than"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Trending section -->
+  <section>
+    <div class="xl:px-[300px]">
+      <!-- Trending heading -->
+      <div class="px-0 py-5">
+        <h4 class="text-white font-bold text-5xl">Trending Now</h4>
+      </div>
+      <!-- Card div -->
+      <div class="flex w-[1320px] justify-between">
+        <div class="relative">
+          <img src="public/squid-game.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+          <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">1</p>
+        </div>
+        <div class="relative">
+          <img src="public/kapil.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+          <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">2</p>
+        </div>
+        <div class="relative">
+          <img src="public/flower.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+          <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">3</p>
+        </div>
+        <div class="relative">
+          <img src="public/raid.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+          <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">4</p>
+        </div>
+        <div class="relative">
+          <img src="public/aap.jpg" alt="" class="xl:w-auto xl:relative border rounded-xl">
+          <p class="xl:text-[100px] xl:font-bold xl:absolute xl:bottom-0 xl:left-[-30px]" id="card-num">5</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
