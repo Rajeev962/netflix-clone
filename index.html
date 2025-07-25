@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- <link href="src/output.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="src/style.css">
-  <link rel="shortcut icon" href="public/favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="public/favicon/favicon-16x16.png" type="image/x-icon">
   <title>Netflix Nepal - Watch TV Shows Online, Watch Movies Online</title>
 </head>
 
@@ -17,14 +16,14 @@
     <div class="px-3 sm:px-8 md:px-12 xl:mx-[250px]">
       <nav class="flex items-center justify-between">
         <div class="">
-          <img src="public/logo.png" alt="" class="hover:cursor-pointer w-[130px] md:w-[175px]">
+          <a href="index.html"><img src="public/logo.png" alt="" class="hover:cursor-pointer w-[130px] md:w-[175px]"></a>
         </div>
         <div class="">
-          <button
+          <a href="signup.html"
             class="text-white bg-red-600 px-4 py-2 hover:cursor-pointer rounded-sm font-sans font-semibold md:text-xl xl:text-sm">
             Sign
             In
-          </button>
+        </a>
         </div>
       </nav>
     </div>
@@ -50,15 +49,13 @@
         <div
           class="flex flex-col items-center gap-5 lg:flex lg:justify-center lg:gap-5 lg:items-center md:flex md:justify-center md:items-center lg:flex-row xl:flex xl:gap-3">
           <div class="">
-            <input type="email" placeholder="Email address"
+            <input type="text" placeholder="Search movie" id="movieInput"
               class="w-[443px] px-4 py-3 sm:px-6 sm:py-4 sm:text-xl sm:rounded-md font-semibold border-1 rounded-sm border-gray-500 text-white">
           </div>
           <div class="">
-            <button
-              class="px-4 py-4 text-white font-sans font-bold hover:cursor-pointer text-xl rounded-sm bg-red-600 xl:w[213px]">
-              Get
-              Started &nbsp;
-              <i class="fa-solid fa-greater-than"></i>
+            <button id="searchBtn"
+              class="px-5 py-4 text-white font-sans font-bold hover:cursor-pointer text-xl rounded-sm bg-red-600 xl:w[213px]">
+              <i class="fa-solid fa-search"></i>
             </button>
           </div>
         </div>
@@ -67,6 +64,8 @@
   </div>
   <!-- Trending section -->
   <section>
+    <div id="movieContainer" class="px-3 sm:px-8 md:px-12 xl:mx-[250px] xl:py-12">
+    </div>
     <div class="px-3 sm:px-8 md:px-12 xl:mx-[250px] xl:py-12">
       <!-- Trending heading -->
       <div class="px-0 py-5">
@@ -333,7 +332,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <footer>
     <!-- footer main div -->
     <div class="px-3 sm:px-8 md:px-12 xl:mx-[250px] xl:flex xl:flex-col xl:gap-12 xl:pb-32">
       <!-- footer top -->
@@ -425,7 +424,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </footer>
   <script src="src/script.js"></script>
 </body>
 

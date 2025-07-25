@@ -76,3 +76,66 @@ sb2.addEventListener("click",function(){
   btn2.style.display = "flex"
   s2.style.display = "none"
 })
+
+// const searchBtn = document.getElementById("searchBtn")
+// const APIKEY = '926e096e'
+// searchBtn.addEventListener("click",async(e)=>{
+//   e.preventDefault();
+//   const movieName = document.getElementById("movieInput").value.trim()
+//   if(movieName===''){
+//     alert("Search cannot be empty")
+//     return;
+//   }
+  
+//   try {
+//     const response =  await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=926e096e&s=${movieName}`)
+//     // const response =  await fetch(`https://www.omdbapi.com/?s=${movieName}&apikey=${APIKEY}}`)
+//     const data = await response.json()
+//     console.log(data)
+//   } catch (error) {
+//     alert("no response")
+//   }
+    
+
+// });
+
+const searchBtn = document.getElementById("searchBtn")
+const APIKEY = '926e096e'
+
+searchBtn.addEventListener("click",async()=>{
+    const movieName = document.getElementById("movieInput").value.trim()
+    
+    if(movieName===''){
+        alert("Enter something?")
+        return
+    }
+    
+    const response = await fetch(`http://www.omdbapi.com/?apikey=926e096e&s=${movieName}`);
+    const data = await response.json();
+    console.log(data);
+    
+    if (data.Response === "True") {
+        const movieContainer = document.getElementById("movieContainer")
+        movieContainer.innerHTML = data.Search.map((movie) => {
+            return `
+              <div class="movie-card">
+                <img src="${movie.Poster !== 'N/A' ? movie.Poster : 'https://m.media-amazon.com/images/'}" alt="Movie Poster">
+                <h4>${movie.Title}</h4>
+                <p>Year:${movie.Year}</p>
+                <p>Type:${movie.Type}</p>
+              </div>
+    `;
+  }).join('');
+} else {
+  movieContainer.innerHTML = `<p>No results found.</p>`;
+}
+})  
+
+const userInput = document.getElementById("userInput")
+const passwordInput = document.getElementById("passwordInput")
+
+const passwordShow = document.createElement("p").value.trim()
+if(passwordInput!=''){
+  const p = document.createElement("p")
+  p.innerHTML = 
+}
